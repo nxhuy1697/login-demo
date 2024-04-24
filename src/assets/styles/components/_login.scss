@@ -1,0 +1,27 @@
+.login{
+    position: relative;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 35%;
+        background-color: white;
+        padding: 30px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
+
+   
+        &-button{
+            text-align: left;
+            button{
+                padding: 8px 30px;
+                background-color: #eeb274;
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+        }
+    }
+}

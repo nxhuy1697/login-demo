@@ -1,0 +1,17 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    input{
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+    textarea{
+        min-height: 80px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        resize: none;
+    }
+}

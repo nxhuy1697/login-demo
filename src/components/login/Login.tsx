@@ -182,7 +182,12 @@ export default function Login() {
           id="content"
           {...register("content",{
             required: { value: true, message: "content cant be empty" },
-          } )}
+            maxLength: {
+              value: 130,
+              message: "Content can't exceed 130 characters",
+
+          }}
+           )}
         />
           <p className="login__form-error">{errors.content?.message}</p>
         <div className="login__form-button">

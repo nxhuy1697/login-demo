@@ -45,6 +45,16 @@ body {
   left: 50%;
   transform: translate(-50%);
   border-radius: 5px;
+  text-align: left;
+}
+.login__form-input {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.login__form-error {
+  font-size: 12px;
+  color: red;
 }
 .login__form-button {
   text-align: left;
@@ -61,11 +71,6 @@ body {
   flex-direction: column;
   text-align: left;
 }
-.formInput input {
-  padding: 10px;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
 .formInput textarea {
   min-height: 80px;
   border: 1px solid grey;
@@ -77,4 +82,7 @@ body {
   font-size: 12px;
   color: red;
   display: none;
+}
+.formInput input:invalid ~ span {
+  display: block;
 }/*# sourceMappingURL=index.css.map */

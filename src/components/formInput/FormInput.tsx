@@ -11,11 +11,11 @@ type Props={
   label: string,
 }
 export default function FormInput(props : Props) {
-  const{label, ErrorMessage} = props
+  const{label, ErrorMessage, name, placeholder, type, onChange} = props
   return (
     <div className='formInput'>
         <label className='formInput__label'>{label}</label>
-        <input name={props.name} placeholder={props.placeholder} type={props.type}  onChange={props.onChange} required />
+        <input name={name} placeholder={placeholder} type={type}  onChange={onChange} required />
         <span>{ErrorMessage}</span>
         </div>
   )

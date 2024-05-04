@@ -1,15 +1,13 @@
-import Login from '@/components/login/Login'
-import React from 'react'
-
-const handleLoginSubmit = (values : any) => {
-    console.log('Form submit: ', values)
-}
+import FormInput from "@/components/formInput/FormInput";
+import React from "react";
 
 export default function Dashboard() {
   return (
     <div>
-        <h2> Infomation Form </h2>
-        <Login onSubmit={handleLoginSubmit} />
-        </div>
-  )
+     
+
+      <FormInput />
+      
+    </div>
+  );
 }

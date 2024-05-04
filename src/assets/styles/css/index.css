@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 815px;
+  height: 850px;
   text-align: center;
 }
 .home__title {
@@ -66,23 +66,54 @@ body {
   border-radius: 5px;
 }
 
-.formInput {
+.filed {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.filed__form {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  width: 35%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
   text-align: left;
 }
-.formInput textarea {
-  min-height: 80px;
+.filed__form-label {
+  color: grey;
+}
+.filed__form-input {
+  padding: 10px;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 10px;
-  resize: none;
 }
-.formInput span {
-  font-size: 12px;
+.filed__form-errors {
   color: red;
-  display: none;
 }
-.formInput input:invalid ~ span {
-  display: block;
+.filed__form-button {
+  text-align: left;
+}
+.filed__form-button button {
+  padding: 8px 30px;
+  background-color: #eeb274;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filed__res {
+  width: 35%;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 30px;
+}
+.filed__res-render {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 10px;
 }/*# sourceMappingURL=index.css.map */

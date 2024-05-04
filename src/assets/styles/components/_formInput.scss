@@ -1,28 +1,56 @@
-.formInput{
+.filed {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  &__form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    width: 35%;
+    background-color: white;
+    padding: 30px;
+    // position: absolute;
+    // top: 5%;
+    // left: 50%;
+    // transform: translate(-50%);
+    border-radius: 5px;
     text-align: left;
-   
-    input{
-       
+    &-label {
+      color: grey;
     }
-    textarea{
-        min-height: 80px;
+    &-input {
+      padding: 10px;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+    &-errors{
+      color: red;
+    }
+    &-button {
+      text-align: left;
+      button {
+        padding: 8px 30px;
+        background-color: #eeb274;
         border: 1px solid grey;
         border-radius: 5px;
-        padding: 10px;
-        resize: none;
+        cursor: pointer;
+      }
     }
-   
-    span{
-        font-size: 12px;
-        color: red;
-        display: none;
+  }
+  &__res{
+    width: 35%;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 30px;
+    &-render{
+      padding: 10px;
+      border: 1px solid grey;
+      border-radius: 5px;
+      margin-top: 10px;
+      
     }
-    input:invalid ~ span{
-        display: block;
-    }
-
-   
-
+  }
 }
